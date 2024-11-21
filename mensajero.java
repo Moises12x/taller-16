@@ -7,19 +7,18 @@ public class Mensajero {
 public interface CanalDeComunicacion {
     void enviarMensaje(String mensaje, String destino);
 }
-// Canal de comunicación para correo electrónico
 public class CorreoElectronico implements CanalDeComunicacion {
     @Override
     public void enviarMensaje(String mensaje, String destino) {
-        System.out.println("Enviando correo electrónico a: " + destino);
-        System.out.println("Mensaje: " + mensaje);
+        System.out.println("Enviando correo electrónico a");
+        System.out.println("Mensaje");
     }
 }
 
 public class SMS implements CanalDeComunicacion {
     public void enviarMensaje(String mensaje, String destino) {
-        System.out.println("Enviando SMS a: " + destino);
-        System.out.println("Mensaje: " + mensaje);
+        System.out.println("Enviando SMS a");
+        System.out.println("Mensaje");
     }
 }
 public class NotificacionPush implements CanalDeComunicacion {
